@@ -31,7 +31,7 @@ public class LevelController : MonoBehaviour
     {
         if (dataList[0].cinemaOff == true)
         {
-            cutscene.SetActive(false);
+            //cutscene.SetActive(false);
         }
     }
 

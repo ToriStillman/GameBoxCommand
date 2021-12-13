@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{2C52A850-2C2D-2D8F-932F-E55AC42AD042}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scripts/WorldGeneration.cs">
     <Files>
-      <File FileName="Assets/Scripts/Scripts/WorldGeneration.cs" Line="62" Column="22" />
+      <File FileName="Assets/Scripts/Scripts/WorldGeneration.cs" Line="18" Column="54" />
       <File FileName="Assets/Scripts/Scripts/Subtitle.cs" />
-      <File FileName="Assets/Scripts/Scripts/BonusController.cs" Line="105" Column="44" />
+      <File FileName="Assets/Scripts/Scripts/BonusController.cs" />
       <File FileName="Assets/Scripts/Scripts/DieController.cs" />
-      <File FileName="Assets/Scripts/Scripts/DistanceController.cs" />
-      <File FileName="Assets/Scripts/Scripts/PlayerController.cs" Line="56" Column="1" />
-      <File FileName="Assets/Scripts/Scripts/TrapController.cs" />
+      <File FileName="Assets/Scripts/Scripts/DistanceController.cs" Line="21" Column="28" />
+      <File FileName="Assets/Scripts/Scripts/PlayerController.cs" Line="14" Column="44" />
+      <File FileName="Assets/Scripts/Scripts/TrapController.cs" Line="7" Column="51" />
       <File FileName="Assets/Scripts/Scripts/FinishController.cs" />
-      <File FileName="Assets/Scripts/Scripts/LevelController.cs" Line="26" Column="6" />
+      <File FileName="Assets/Scripts/Scripts/LevelController.cs" Line="34" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a426004e-9fc0-411a-bda2-3c02afbc8ca6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="431b2262-525b-43c4-b805-617ecdab6ec4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
