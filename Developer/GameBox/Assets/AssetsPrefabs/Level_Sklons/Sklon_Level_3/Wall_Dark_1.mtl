@@ -1,0 +1,90 @@
+newmtl Wall_Dark_0_Wall_D4_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-0-Wall_D4.1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_1_Wall_D3_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-1-Wall_D3.1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_2_Wall_D3_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-2-Wall_D3.1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_3_Wall_D1_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark_1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_6_Wall_D2_3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-6-Wall_D2.3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_7_Wall_D2_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-7-Wall_D2.2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_8_Wall_D2_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-8-Wall_D2.1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_9_Wall_D3_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-9-Wall_D3.2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_10_Wall_D4_3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-10-Wall_D4.3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_11_Wall_D4_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-11-Wall_D4.2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06

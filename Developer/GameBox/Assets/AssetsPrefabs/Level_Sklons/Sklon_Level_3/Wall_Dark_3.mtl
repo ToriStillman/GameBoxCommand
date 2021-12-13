@@ -1,0 +1,36 @@
+newmtl Wall_Dark_0_Wall_D4_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-0-Wall_D4.1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_9_Wall_D3_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark_3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_10_Wall_D4_3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-10-Wall_D4.3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_11_Wall_D4_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Wall_Dark-11-Wall_D4.2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06

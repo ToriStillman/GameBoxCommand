@@ -1,0 +1,75 @@
+newmtl Bonus_02:lambert2SG
+illum 4
+Kd 0.51 0.02 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Bonus_02:lambert3SG
+illum 4
+Kd 0.64 0.64 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Bonus_02:lambert4SG
+illum 4
+Kd 0.14 0.14 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Bonus_03:lambert5SG
+illum 4
+Kd 0.28 1.00 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Bonus_03:lambert6SG
+illum 4
+Kd 0.00 0.13 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Coal:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Coal.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon1_0_Sklon2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon1-0-Sklon2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon1_1_Sklon1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon1-1-Sklon1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon1_3_Sklon4:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon1-3-Sklon4.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon1_3_Sklon5:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon1-3-Sklon4.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06

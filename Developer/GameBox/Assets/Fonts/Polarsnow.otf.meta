@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: de790fa39022b47319d1861fe51f75ce
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Polar Snow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1be1c32b050c7474c915744c899e75cf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
