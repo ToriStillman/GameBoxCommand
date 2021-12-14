@@ -28,8 +28,12 @@ public class WorldGeneration : MonoBehaviour
     private int roadLenght = 2;
     private int size;
     private int maxRoads = 110;
+    private int count = 0;
+    private int holeSpawn;
 
     private bool nullObj;
+    private bool holeOk = false;
+    private bool nullLine;
     private bool stopCreate = false;
 
     private void Awake()
@@ -38,46 +42,78 @@ public class WorldGeneration : MonoBehaviour
         size = (max - 1) / 2;
         spawnPos = 8;
         spawnDecor = spawnPos;
+        holeSpawn = 70;
 
         for (int i = 0; i < maxRoads - 4; i++)
         {
+            
             CreateRoad();
+
+            if (!nullObj)
+            {
+                CreateDecor();
+            }
+
+            if (holeOk)
+            {
+                holeSpawn = 150;
+            }
+
+            if (spawnPos % 30 == 0)
+            {
+                Present();
+            }
+
             spawnPos += roadLenght;
             nullObj = !nullObj;
+
         }
 
-        if (spawnPos - 10 == maxRoads * roadLenght && !stopCreate)
+        if (spawnPos - 20 == maxRoads * roadLenght && !stopCreate)
         {
-            CreateRoad();
             CreateDecor();
             CreateDecor();
+            CreateDecor();
+            CreateDecor();
+            CreateDecor();
+            Instantiate(finish, new Vector3(0, -1, spawnPos), transform.rotation);
             stopCreate = true;
-            Instantiate(finish, new Vector3(0, -1, spawnPos + 2), transform.rotation);
-            
+
         }
     }
 
     private void CreateRoad()
     {
-        if (!nullObj)
+        count++;
+
+        if (count == 5)
         {
-            CreateDecor();
+            nullLine = false;
+            count = 0;
+        }
+        else
+        {
+            nullLine = true;
         }
 
-        if (spawnPos == 42)
+        if (spawnPos == holeSpawn)
         {
             spawnPos += 8;
-            GameObject nextRoad = Instantiate(holePrefab[Random.Range(0, holePrefab.Length)], new Vector3(0, 0, spawnPos), transform.rotation);
-            roadActive.Add(nextRoad);
+            Instantiate(holePrefab[Random.Range(0, holePrefab.Length)], new Vector3(0, 0, spawnPos), transform.rotation);
             spawnPos += 2;
+            holeOk = true;
         }
 
         for (int i = - size; i < size + 1; i++)
         {
             GameObject[] massive = roadPrefab;
-            GameObject nextRoad = Instantiate(massive[Random.Range(0, massive.Length)], new Vector3(i * roadLenght, 0, spawnPos), transform.rotation);
-            roadActive.Add(nextRoad);
-            CreateTraps(i);
+            Instantiate(massive[Random.Range(0, massive.Length)], new Vector3(i * roadLenght, 0, spawnPos), transform.rotation);
+
+            if (!nullLine)
+            {
+                CreateTraps(i);
+            }
+           
         }
 
         maxTrap = 0;
@@ -86,24 +122,12 @@ public class WorldGeneration : MonoBehaviour
         size = (max - 1) / 2;
     }
 
-    private void DeleteRoad()
-    {
-        for (int i = 0; i < size - 1; i++)
-        {
-            Destroy(roadActive[i]);
-            roadActive.RemoveAt(i);
-        }
-    }
-
     private void CreateDecor()
     {
-        GameObject nextRoad = Instantiate(linePrefab[Random.Range(0, linePrefab.Length)], new Vector3(-size * roadLenght - roadLenght * 2 + 1, 0, spawnDecor + 1), transform.rotation);
-        roadActive.Add(nextRoad);
-
+        Instantiate(linePrefab[Random.Range(0, linePrefab.Length)], new Vector3(-size * roadLenght - roadLenght * 2 + 1, 0, spawnDecor + 1), transform.rotation);
         Quaternion a = Quaternion.Euler(0,-180,0);
 
-        nextRoad = Instantiate(linePrefab[Random.Range(0, linePrefab.Length)], new Vector3(size * roadLenght + roadLenght + 1f, 0, spawnDecor + 1), a);
-        roadActive.Add(nextRoad);
+        Instantiate(linePrefab[Random.Range(0, linePrefab.Length)], new Vector3(size * roadLenght + roadLenght + 1f, 0, spawnDecor + 1), a);
         spawnDecor += 4;
     }
 
@@ -111,50 +135,52 @@ public class WorldGeneration : MonoBehaviour
     {
         GameObject[] massive = roadPrefab;
 
-        if (maxBonus > 1 && maxTrap > 2)
+        if (maxTrap == 2)
         {
             massive = grassPrefab;
         }
         else
         {
-            int a = Random.Range(1, 4);
+            int a = Random.Range(1, 3);
 
             switch (a)
             {
                 case 1:
-                    if (maxTrap == max - size || nullObj || maxBonus == 0)
-                    {
-                        massive = bonusPrefab;
-                        maxBonus++;
-                    }
-                    else
-                    {
-                        massive = trapsPrefab;
-                        maxTrap++;
-                    }
+                    massive = trapsPrefab;
+                    maxTrap++;
                     break;
 
                 case 2:
-                    if (maxTrap < max - 1 && !nullObj)
+                    if (maxTrap < 2)
                     {
                         massive = trapsPrefab;
                         maxTrap++;
                     }
                     else
                     {
-                        massive = bonusPrefab;
-                        maxBonus++;
+                        massive = grassPrefab;
                     }
-                    break;
-
-                case 3:
-                    massive = grassPrefab;
                     break;
             }
 
         }
 
-        GameObject nextRoad = Instantiate(massive[Random.Range(0, massive.Length)], new Vector3(i * roadLenght, 0, spawnPos), transform.rotation);
-        roadActive.Add(nextRoad);
+        Instantiate(massive[Random.Range(0, massive.Length)], new Vector3(i * roadLenght, 0, spawnPos), transform.rotation);
+    }
+
+    private void Present()
+    {
+        if (maxBonus < 1)
+        {
+            int b = Random.Range(0, 2);
+            int c = 0;
+
+            for (int k = 0; k < 4; k++)
+            {
+                Instantiate(bonusPrefab[b], new Vector3(roadLenght, 0, spawnPos + c), transform.rotation);
+                c += 2;
+            }
+            maxBonus++;
+        }
     }
 }

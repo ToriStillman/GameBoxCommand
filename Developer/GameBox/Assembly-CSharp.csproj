@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/Scripts/DistanceController.cs" />
     <Compile Include="Assets/Scripts/Scripts/PlayerController.cs" />
     <Compile Include="Assets/Scripts/Scripts/ScriptableObjects.cs" />
+    <Compile Include="Assets/Scripts/Scripts/GravityController.cs" />
     <Compile Include="Assets/Scripts/Scripts/DieController.cs" />
     <Compile Include="Assets/Scripts/Scripts/Subtitle.cs" />
     <Compile Include="Assets/Scripts/Scripts/TrapController.cs" />

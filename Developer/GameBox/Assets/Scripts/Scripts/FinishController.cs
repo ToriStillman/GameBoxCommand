@@ -22,11 +22,11 @@ public class FinishController : MonoBehaviour
 
         if (coals > presents)
         {
-            level.NextScene(2);
+            level.NextScene(3);
         }
         else if (coals < presents)
         {
-            level.NextScene(1);
+            level.NextScene(2);
         }
     }
 }

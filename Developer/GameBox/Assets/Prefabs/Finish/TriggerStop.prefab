@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5515405176218493571}
   - component: {fileID: 4879977035367297834}
+  - component: {fileID: 4758196819838591037}
   m_Layer: 0
   m_Name: TriggerStop
   m_TagString: Untagged
@@ -44,3 +45,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4078262, y: 0.100922346, z: 1.5262723}
   m_Center: {x: 0.20391326, y: 0.44953883, z: -0.26313615}
+--- !u!114 &4758196819838591037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197636971457513711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a448eae8a6aee4b639c898558e01ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}

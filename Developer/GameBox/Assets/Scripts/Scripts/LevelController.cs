@@ -37,7 +37,7 @@ public class LevelController : MonoBehaviour
 
     public void NextScene(int num)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + num);
+        SceneManager.LoadScene(num);
     }
 
 }

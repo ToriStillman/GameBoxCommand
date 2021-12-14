@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded && !isDie)
         {
-            rb.AddForce(Vector3.up * (speedJump * 100));
+            rb.AddForce(Vector3.up * (speedJump * 120));
             MusicController audio = GetComponent<MusicController>();
             audio.JumpMusic();
         }
