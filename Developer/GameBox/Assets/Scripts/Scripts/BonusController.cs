@@ -38,7 +38,7 @@ public class BonusController : MonoBehaviour
         MusicController audio = GetComponent<MusicController>();
         audio.BonusMusic();
 
-        yield return new WaitForSeconds(0.02f);
+        yield return new WaitForSeconds(0.001f);
         Destroy(other);
     }
 

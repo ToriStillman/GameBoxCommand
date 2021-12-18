@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Coal
   - Trampoline
+  - Stop
   layers:
   - Default
   - TransparentFX

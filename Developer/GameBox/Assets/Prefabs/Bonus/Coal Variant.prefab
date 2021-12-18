@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &192396246168936487
+--- !u!65 &6795289532389507759
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5188948157005915698}
+  m_GameObject: {fileID: 5693149122714496856}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.2, y: 5.2, z: 3.2318046}
+  m_Center: {x: -0, y: 2.6, z: -0.16310558}
 --- !u!1001 &4954998674436152163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8376253320331447237, guid: 33bd9673a6dd94073b3fbc1defbd713b, type: 3}
+      propertyPath: m_TagString
+      value: Coal
+      objectReference: {fileID: 0}
     - target: {fileID: -5981231076496373436, guid: 33bd9673a6dd94073b3fbc1defbd713b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -102,8 +106,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33bd9673a6dd94073b3fbc1defbd713b, type: 3}
---- !u!1 &5188948157005915698 stripped
+--- !u!1 &5693149122714496856 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33bd9673a6dd94073b3fbc1defbd713b, type: 3}
+  m_CorrespondingSourceObject: {fileID: -8376253320331447237, guid: 33bd9673a6dd94073b3fbc1defbd713b, type: 3}
   m_PrefabInstance: {fileID: 4954998674436152163}
   m_PrefabAsset: {fileID: 0}

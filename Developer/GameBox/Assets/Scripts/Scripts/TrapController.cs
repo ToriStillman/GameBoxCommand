@@ -6,23 +6,24 @@ public class TrapController : MonoBehaviour
 {
     [SerializeField] private GameObject buttonMenu;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        if (collision.gameObject.CompareTag("Trap"))
+        if (other.gameObject.CompareTag("Trap"))
         {
             gameObject.GetComponent<PlayerController>().GetSpeed(-1f);
             gameObject.GetComponent<BonusController>().CrashBonus();
             var rb = GetComponent<Rigidbody>();
             rb.AddForce(Vector3.back * 20, ForceMode.VelocityChange);
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
 
-            //gameObject.GetComponent<PlayerController>().StartDeath();
-            //MusicController audio = GetComponent<MusicController>();
-            //audio.DieMusic();
+            MusicController audio = GetComponent<MusicController>();
+            audio.HitMusic();
+
 
             //StartCoroutine(Wait());
         }
     }
+
 
     IEnumerator Wait()
     {

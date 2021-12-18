@@ -11,6 +11,7 @@ public class MusicController : MonoBehaviour
     [SerializeField] private AudioSource musicBonus;
     [SerializeField] private AudioSource musicJump;
     [SerializeField] private AudioSource musicDie;
+    [SerializeField] private AudioSource[] musicHit = new AudioSource[6];
 
 
     public void PlayGame()
@@ -40,5 +41,11 @@ public class MusicController : MonoBehaviour
         musicDie.Play();
         game.Stop();
         gameMenu.Stop();
+    }
+
+    public void HitMusic()
+    {
+        int a = Random.Range(0, 6);
+        musicHit[a].Play();
     }
 }

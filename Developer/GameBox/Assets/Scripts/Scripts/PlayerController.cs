@@ -149,8 +149,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isTrampoline = false;
-        rb.useGravity = true;
+        if (other.gameObject.CompareTag("Stop")) 
+        {
+            //isTrampoline = false;
+            rb.useGravity = true;
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -158,6 +162,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Trampoline"))
         {
             Trampoline();
+            isGrounded = false;
         }
         if (collision.gameObject.CompareTag("Road"))
         {

@@ -67,6 +67,7 @@
     <Compile Include="Assets/Scripts/Scripts/DieController.cs" />
     <Compile Include="Assets/Scripts/Scripts/Subtitle.cs" />
     <Compile Include="Assets/Scripts/Scripts/TrapController.cs" />
+    <Compile Include="Assets/Scripts/Scripts/DeleteTrapsController.cs" />
     <Compile Include="Assets/Scripts/Scripts/BonusController.cs" />
   </ItemGroup>
   <ItemGroup>

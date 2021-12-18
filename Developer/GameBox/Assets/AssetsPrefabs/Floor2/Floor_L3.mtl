@@ -1,0 +1,72 @@
+newmtl Sklon_L_0_Floor_L6:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Floor_L4.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_1_Floor_L3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Floor_L3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_2_Floor_L2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Floor_L2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_3_Floor_L1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Floor_L1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_4_Sklon_L1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon_L1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_5_Sklon_L4:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon_L4.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_6_Sklon_L3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon_L3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Sklon_L_7_Sklon_L2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Sklon_L2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
