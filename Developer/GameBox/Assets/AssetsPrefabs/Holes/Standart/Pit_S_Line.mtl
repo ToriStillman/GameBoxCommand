@@ -1,0 +1,54 @@
+newmtl Pit_0_Pit_D_Line:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-0-Pit_D_Line.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Pit_1_Pit_D_Turn:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-1-Pit_D_Turn.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Pit_2_Pit_D_Start:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-2-Pit_D_Start.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Pit_3_Pit_S_Line:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-3-Pit_S_Line.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Pit_4_Pit_S_Turn:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-4-Pit_S_Turn.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Pit_5_Pit_S_Start:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Pit-5-Pit_S_Start.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06

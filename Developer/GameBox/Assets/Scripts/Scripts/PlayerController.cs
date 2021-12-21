@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxRoads;
     [SerializeField] private Text startText;
     [SerializeField] private Text speedText;
+    [SerializeField] private GameObject button;
 
     private Rigidbody rb;
     private Animator anim;
@@ -55,9 +56,14 @@ public class PlayerController : MonoBehaviour
             rb.useGravity = true;
         }
 
+        if (transform.position.y > 2.5)
+        {
+            rb.useGravity = true;
+        }
+
         PlayerMove();
 
-        speedText.text = speedNorm.ToString("0.00");
+        speedText.text = (speedNorm * 2).ToString("0.00");
 
         if (transform.position.x >= targetPos && rightPos)
         {
@@ -73,7 +79,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(targetPos, transform.position.y, transform.position.z);
         }
 
-        if (speedNorm < 15 && onSpeed)
+        if (speedNorm < 23 && onSpeed)
         {
             GetSpeed(0.003f);
         }
@@ -140,7 +146,7 @@ public class PlayerController : MonoBehaviour
             rb.useGravity = false;
             isTrampoline = true;
 
-            rb.AddForce(Vector3.up * (speedJump * 130));
+            rb.AddForce(Vector3.up * (speedJump * 90));
             rb.AddForce(Vector3.forward * (speedJump * 2), ForceMode.Impulse);
             MusicController audio = GetComponent<MusicController>();
             audio.JumpMusic();
@@ -242,6 +248,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         NormSpeed();
         onSpeed = true;
+        button.SetActive(true);
     }
 
 }

@@ -11,7 +11,6 @@ public class WorldGeneration : MonoBehaviour
     [SerializeField] private GameObject[] trapsPrefab;
     [SerializeField] private GameObject[] bonusPrefab;
     [SerializeField] private GameObject[] grassPrefab;
-    [SerializeField] private GameObject[] decorPrefab;
     [SerializeField] private GameObject[] linePrefab;
     [SerializeField] private GameObject[] holePrefab;
     [SerializeField] private GameObject finish;
@@ -54,7 +53,6 @@ public class WorldGeneration : MonoBehaviour
                 }
 
                 spawnPos += roadLenght;
-                nullObj = !nullObj;
             }
 
             if (spawnPos - (holeSpawn * 10) == maxRoads * roadLenght && !stopCreate)
@@ -64,8 +62,10 @@ public class WorldGeneration : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < maxRoads / 2 - 2; i++)
+        for (int i = 0; i < (maxRoads / 2 - 2) * 2; i++)
         {
+            nullObj = !nullObj;
+
             if (!nullObj)
             {
                 CreateDecor();
@@ -183,6 +183,7 @@ public class WorldGeneration : MonoBehaviour
     {
         spawnPos += 8;
         Instantiate(holePrefab[Random.Range(0, holePrefab.Length)], new Vector3(0, 0, spawnPos), transform.rotation);
+        spawnPos += 2;
     }
 }
 

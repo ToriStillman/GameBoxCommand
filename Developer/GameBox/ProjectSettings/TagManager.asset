@@ -10,6 +10,7 @@ TagManager:
   - Coal
   - Trampoline
   - Stop
+  - Hole
   layers:
   - Default
   - TransparentFX

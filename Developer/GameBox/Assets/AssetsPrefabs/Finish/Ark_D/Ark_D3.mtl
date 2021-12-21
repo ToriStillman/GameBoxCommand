@@ -1,0 +1,45 @@
+newmtl Wall_Dark_2_Ark_D5_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ark_D5.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_5_Ark_D1_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ark_D1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_8_Ark_D4_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ark_D4.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_11_Ark_D3_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ark_D3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl Wall_Dark_14_Ark_D2_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Ark_D2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06

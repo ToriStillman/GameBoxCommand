@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - DistanceController
     - FinishController
     - GravityController
+    - HoleController
     - LevelController
     - MusicController
     - PlayerController
@@ -212,6 +213,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6156}
     - Class: 114
       Script: {instanceID: 6912}
+    - Class: 114
+      Script: {instanceID: 26552}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -327,6 +330,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6156}
     - Class: 114
       Script: {instanceID: 6912}
+    - Class: 114
+      Script: {instanceID: 26552}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -440,6 +445,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6156}
     - Class: 114
       Script: {instanceID: 6912}
+    - Class: 114
+      Script: {instanceID: 26552}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -557,7 +564,7 @@ ScriptsOnlyBuild:
     className: CinemachineCollider
   - hash:
       serializedVersion: 2
-      Hash: e4d2e18efe55762a56360f1f411193f2
+      Hash: 623b349bc5fedbb01f3f1f36d7292fa7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WorldGeneration
@@ -917,7 +924,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 14ad6ce47e8aeab285e8fd45feffb79c
+      Hash: 484050feacd960e4cc838d64e9534736
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1611,6 +1618,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 47fe8b2f013ee3d2d8ba47c5140ee3b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HoleController
   platform: 19
   scenePathNames:
   - Assets/Scenes/0_SceneStart.unity
